@@ -129,7 +129,7 @@ python codes/plots.py
 │   └── tsmixer.py             # Rainfall time-series MLPs
 ├── codes/                     # Utility Scripts
 │   ├── generate_journal_plots.py
-│   └── graph_gen.py
+│   └── graphs.py
 ├── main.py                    # Pipeline execution entry point
 ├── .gitignore                 # Protected data ignore rules
 └── README.md                  # Project documentation

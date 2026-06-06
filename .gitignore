@@ -9,9 +9,8 @@ __pycache__/
 *.ckpt
 
 # Datasets and Large Data Files
-dataset/
 *.npy
-*.csv
+
 
 # C Environments
 .env
@@ -27,8 +26,4 @@ venv.bak/
 .vscode/
 *.swp
 
-# Output figures / logs (Optional)
-# journal_figures/
-csv_results/
-results/
-results_best/
+

@@ -47,6 +47,10 @@ def main():
     val_loader   = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False)
     test_loader  = DataLoader(test_ds, batch_size=BATCH_SIZE, shuffle=False)
 
+    if len(train_loader) == 0 or len(val_loader) == 0 or len(test_loader) == 0:
+        print("\n[WARNING] Dataset is missing or too small. One of the dataloaders is empty.")
+        return
+
     # Global Model
     global_model = TriModalFloodNet(rate=1.0).to(DEVICE)
     n_params = sum(p.numel() for p in global_model.parameters())
